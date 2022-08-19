@@ -1,0 +1,651 @@
+{
+	"info": {
+		"_postman_id": "5590f6f9-abc6-4bdc-b344-c9a054a46447",
+		"name": "HeadHunter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21146728"
+	},
+	"item": [
+		{
+			"name": "Запрос информации по ключевым навыкам",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/suggests/skill_set?text=Тестирование пользовательского интерфейса",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"suggests",
+						"skill_set"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Тестирование пользовательского интерфейса"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Запрос информации по ключевым навыкам",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.hh.ru/suggests/skill_set?text=Тестирование пользовательского интерфейса",
+							"protocol": "https",
+							"host": [
+								"api",
+								"hh",
+								"ru"
+							],
+							"path": [
+								"suggests",
+								"skill_set"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "Тестирование пользовательского интерфейса"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "ddos-guard"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jun 2022 18:54:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "115"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1654628089024aa4d86cb1edd7a8d34c"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Expires",
+							"value": "Tue, 26 Apr 2022 18:54:49 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location, ETag, Date, Expires, Cache-Control, Content-Type, X-Request-ID"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "1654628089024aa4d86cb1edd7a8d34c"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"nel\",\"endpoints\":[{\"url\":\"https:\\/\\/nel.hhdev.ru\\/report\\/api\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"nel\",\"max_age\":3600}"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"id\": \"2836\",\n            \"text\": \"Тестирование пользовательского интерфейса\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Дополнительный поиск, для себя",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/employers?id=2836",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"employers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2836"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Дополнительный поиск, для себя",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.hh.ru/employers?id=2836",
+							"protocol": "https",
+							"host": [
+								"api",
+								"hh",
+								"ru"
+							],
+							"path": [
+								"employers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2836"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "ddos-guard"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jun 2022 18:55:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1654628108127b1620eb704770c413f9"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Expires",
+							"value": "Tue, 26 Apr 2022 18:55:08 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location, ETag, Date, Expires, Cache-Control, Content-Type, X-Request-ID"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "1654628108127b1620eb704770c413f9"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"nel\",\"endpoints\":[{\"url\":\"https:\\/\\/nel.hhdev.ru\\/report\\/api\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"nel\",\"max_age\":3600}"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"id\": \"5775464\",\n            \"name\": \"000 Mediva\",\n            \"url\": \"https://api.hh.ru/employers/5775464\",\n            \"alternate_url\": \"https://hh.ru/employer/5775464\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=5775464\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"4748227\",\n            \"name\": \"000БАТ\",\n            \"url\": \"https://api.hh.ru/employers/4748227\",\n            \"alternate_url\": \"https://hh.ru/employer/4748227\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=4748227\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"36227\",\n            \"name\": \"000 МАГАЗИН МАГАЗИНОВ - Эксперт по торговой недвижимости\",\n            \"url\": \"https://api.hh.ru/employers/36227\",\n            \"alternate_url\": \"https://hh.ru/employer/36227\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/2419769.png\",\n                \"240\": \"https://hhcdn.ru/employer-logo/2419770.png\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/494504.png\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=36227\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"3172102\",\n            \"name\": \"+++000Нур-Сар-А\",\n            \"url\": \"https://api.hh.ru/employers/3172102\",\n            \"alternate_url\": \"https://hh.ru/employer/3172102\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=3172102\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"2757443\",\n            \"name\": \"000 ремонт\",\n            \"url\": \"https://api.hh.ru/employers/2757443\",\n            \"alternate_url\": \"https://hh.ru/employer/2757443\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=2757443\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"3643187\",\n            \"name\": \"001KZ (001КЗ)\",\n            \"url\": \"https://api.hh.ru/employers/3643187\",\n            \"alternate_url\": \"https://hh.ru/employer/3643187\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/2920244.jpeg\",\n                \"240\": \"https://hhcdn.ru/employer-logo/2920245.jpeg\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/619773.jpg\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=3643187\",\n            \"open_vacancies\": 7\n        },\n        {\n            \"id\": \"988247\",\n            \"name\": \"007\",\n            \"url\": \"https://api.hh.ru/employers/988247\",\n            \"alternate_url\": \"https://hh.ru/employer/988247\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/1664370.jpeg\",\n                \"240\": \"https://hhcdn.ru/employer-logo/1664371.jpeg\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/305500.jpg\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=988247\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"1585311\",\n            \"name\": \"007\",\n            \"url\": \"https://api.hh.ru/employers/1585311\",\n            \"alternate_url\": \"https://hh.ru/employer/1585311\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=1585311\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"5402159\",\n            \"name\": \"007 Lounge\",\n            \"url\": \"https://api.hh.ru/employers/5402159\",\n            \"alternate_url\": \"https://hh.ru/employer/5402159\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=5402159\",\n            \"open_vacancies\": 1\n        },\n        {\n            \"id\": \"5912899\",\n            \"name\": \"007nails\",\n            \"url\": \"https://api.hh.ru/employers/5912899\",\n            \"alternate_url\": \"https://hh.ru/employer/5912899\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/4252120.jpeg\",\n                \"240\": \"https://hhcdn.ru/employer-logo/4252121.jpeg\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/952897.jpg\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=5912899\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"2392442\",\n            \"name\": \"007 project\",\n            \"url\": \"https://api.hh.ru/employers/2392442\",\n            \"alternate_url\": \"https://hh.ru/employer/2392442\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=2392442\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"1272187\",\n            \"name\": \"007 Ваш Успех\",\n            \"url\": \"https://api.hh.ru/employers/1272187\",\n            \"alternate_url\": \"https://hh.ru/employer/1272187\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=1272187\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"3357506\",\n            \"name\": \"007 Проджект Групп\",\n            \"url\": \"https://api.hh.ru/employers/3357506\",\n            \"alternate_url\": \"https://hh.ru/employer/3357506\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=3357506\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"605490\",\n            \"name\": \"007, центр услуг\",\n            \"url\": \"https://api.hh.ru/employers/605490\",\n            \"alternate_url\": \"https://hh.ru/employer/605490\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/1867542.png\",\n                \"240\": \"https://hhcdn.ru/employer-logo/1867543.png\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/356320.PNG\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=605490\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"4244677\",\n            \"name\": \"01\",\n            \"url\": \"https://api.hh.ru/employers/4244677\",\n            \"alternate_url\": \"https://hh.ru/employer/4244677\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=4244677\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"4492703\",\n            \"name\": \"01\",\n            \"url\": \"https://api.hh.ru/employers/4492703\",\n            \"alternate_url\": \"https://hh.ru/employer/4492703\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=4492703\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"5892972\",\n            \"name\": \"0112 GROUP\",\n            \"url\": \"https://api.hh.ru/employers/5892972\",\n            \"alternate_url\": \"https://hh.ru/employer/5892972\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/4109051.png\",\n                \"240\": \"https://hhcdn.ru/employer-logo/4109052.png\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/917093.png\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=5892972\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"6105570\",\n            \"name\": \"01_coffee, кофейня\",\n            \"url\": \"https://api.hh.ru/employers/6105570\",\n            \"alternate_url\": \"https://hh.ru/employer/6105570\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=6105570\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"5296076\",\n            \"name\": \"01ourdoor\",\n            \"url\": \"https://api.hh.ru/employers/5296076\",\n            \"alternate_url\": \"https://hh.ru/employer/5296076\",\n            \"logo_urls\": null,\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=5296076\",\n            \"open_vacancies\": 0\n        },\n        {\n            \"id\": \"576501\",\n            \"name\": \"01PROMO\",\n            \"url\": \"https://api.hh.ru/employers/576501\",\n            \"alternate_url\": \"https://hh.ru/employer/576501\",\n            \"logo_urls\": {\n                \"90\": \"https://hhcdn.ru/employer-logo/367499.jpeg\",\n                \"240\": \"https://hhcdn.ru/employer-logo/440356.jpeg\",\n                \"original\": \"https://hhcdn.ru/employer-logo-original/171898.jpg\"\n            },\n            \"vacancies_url\": \"https://api.hh.ru/vacancies?employer_id=576501\",\n            \"open_vacancies\": 0\n        }\n    ],\n    \"found\": 1783044,\n    \"pages\": 89153,\n    \"per_page\": 20,\n    \"page\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Метро Нижнего",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/metro/66",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"metro",
+						"66"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Метро Нижнего",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.hh.ru/metro/66",
+							"protocol": "https",
+							"host": [
+								"api",
+								"hh",
+								"ru"
+							],
+							"path": [
+								"metro",
+								"66"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "ddos-guard"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jun 2022 18:55:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "165462793567219f7ce03d5df1a36c33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=1200"
+						},
+						{
+							"key": "Expires",
+							"value": "Tue, 07 Jun 2022 19:15:15 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"h-34e70181634a268abe956c2c0c748760f470d687-\"0be0822649747b4e27bbe34958f8f21d8\"-mi-59129aacfb6cebbe2c52f30ef3424209f7252e82-RU195af160d80ad8eeb701908d23c8bc24849bc453\""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location, ETag, Date, Expires, Cache-Control, Content-Type, X-Request-ID"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "165462811539713be77f6e48953ab029"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"nel\",\"endpoints\":[{\"url\":\"https:\\/\\/nel.hhdev.ru\\/report\\/api\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"nel\",\"max_age\":3600}"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"66\",\n    \"name\": \"Нижний Новгород\",\n    \"lines\": [\n        {\n            \"id\": \"50\",\n            \"hex_color\": \"D80707\",\n            \"name\": \"Автозаводская\",\n            \"stations\": [\n                {\n                    \"id\": \"50.278\",\n                    \"name\": \"Горьковская\",\n                    \"lat\": 56.313933,\n                    \"lng\": 43.99482,\n                    \"order\": 0\n                },\n                {\n                    \"id\": \"50.279\",\n                    \"name\": \"Московская\",\n                    \"lat\": 56.321097,\n                    \"lng\": 43.945799,\n                    \"order\": 1\n                },\n                {\n                    \"id\": \"50.280\",\n                    \"name\": \"Чкаловская\",\n                    \"lat\": 56.310637,\n                    \"lng\": 43.936933,\n                    \"order\": 2\n                },\n                {\n                    \"id\": \"50.281\",\n                    \"name\": \"Ленинская\",\n                    \"lat\": 56.297798,\n                    \"lng\": 43.937328,\n                    \"order\": 3\n                },\n                {\n                    \"id\": \"50.282\",\n                    \"name\": \"Заречная\",\n                    \"lat\": 56.285144,\n                    \"lng\": 43.927528,\n                    \"order\": 4\n                },\n                {\n                    \"id\": \"50.283\",\n                    \"name\": \"Двигатель Революции\",\n                    \"lat\": 56.277093,\n                    \"lng\": 43.922012,\n                    \"order\": 5\n                },\n                {\n                    \"id\": \"50.284\",\n                    \"name\": \"Пролетарская\",\n                    \"lat\": 56.266922,\n                    \"lng\": 43.914143,\n                    \"order\": 6\n                },\n                {\n                    \"id\": \"50.285\",\n                    \"name\": \"Автозаводская\",\n                    \"lat\": 56.257243,\n                    \"lng\": 43.902357,\n                    \"order\": 7\n                },\n                {\n                    \"id\": \"50.286\",\n                    \"name\": \"Комсомольская\",\n                    \"lat\": 56.252662,\n                    \"lng\": 43.889888,\n                    \"order\": 8\n                },\n                {\n                    \"id\": \"50.287\",\n                    \"name\": \"Кировская\",\n                    \"lat\": 56.247426,\n                    \"lng\": 43.876719,\n                    \"order\": 9\n                },\n                {\n                    \"id\": \"50.288\",\n                    \"name\": \"Парк Культуры\",\n                    \"lat\": 56.242034,\n                    \"lng\": 43.85816,\n                    \"order\": 10\n                }\n            ]\n        },\n        {\n            \"id\": \"51\",\n            \"hex_color\": \"0071BC\",\n            \"name\": \"Сормовская\",\n            \"stations\": [\n                {\n                    \"id\": \"51.606\",\n                    \"name\": \"Стрелка \",\n                    \"lat\": 56.3343,\n                    \"lng\": 43.9597,\n                    \"order\": 0\n                },\n                {\n                    \"id\": \"51.289\",\n                    \"name\": \"Московская 2\",\n                    \"lat\": 56.321097,\n                    \"lng\": 43.945799,\n                    \"order\": 1\n                },\n                {\n                    \"id\": \"51.290\",\n                    \"name\": \"Канавинская\",\n                    \"lat\": 56.320273,\n                    \"lng\": 43.927438,\n                    \"order\": 2\n                },\n                {\n                    \"id\": \"51.291\",\n                    \"name\": \"Бурнаковская\",\n                    \"lat\": 56.325704,\n                    \"lng\": 43.911897,\n                    \"order\": 3\n                },\n                {\n                    \"id\": \"51.292\",\n                    \"name\": \"Буревестник\",\n                    \"lat\": 56.333834,\n                    \"lng\": 43.892799,\n                    \"order\": 4\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Запрос по языкам",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "PHPSESSID",
+						"value": "r2t5uvjq435r4q7ib3vtdjq120",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.hh.ru/languages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"languages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Запрос по языкам",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "PHPSESSID",
+								"value": "r2t5uvjq435r4q7ib3vtdjq120",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.hh.ru/languages",
+							"protocol": "https",
+							"host": [
+								"api",
+								"hh",
+								"ru"
+							],
+							"path": [
+								"languages"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "ddos-guard"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Jun 2022 11:29:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1654686890542b43fbde4dda76f8bdf2"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=1200"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 08 Jun 2022 11:49:59 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"\"0f37a8237ca66b169d21de9e5d8c616c9\"-RU44b06226533ae4d8f015a2b5532ed6a30237f06f\""
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location, ETag, Date, Expires, Cache-Control, Content-Type, X-Request-ID"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "16546877995925b1e10e210397314fbb"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"nel\",\"endpoints\":[{\"url\":\"https:\\/\\/nel.hhdev.ru\\/report\\/api\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"nel\",\"max_age\":3600}"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"kir\",\n        \"name\": \"Кыргызский\"\n    },\n    {\n        \"id\": \"mya\",\n        \"name\": \"Бирманский\"\n    },\n    {\n        \"id\": \"udm\",\n        \"name\": \"Удмуртский\"\n    },\n    {\n        \"id\": \"aze\",\n        \"name\": \"Азербайджанский\"\n    },\n    {\n        \"id\": \"sqi\",\n        \"name\": \"Албанский\"\n    },\n    {\n        \"id\": \"ara\",\n        \"name\": \"Арабский\"\n    },\n    {\n        \"id\": \"hye\",\n        \"name\": \"Армянский\"\n    },\n    {\n        \"id\": \"afr\",\n        \"name\": \"Африкаанс\"\n    },\n    {\n        \"id\": \"bak\",\n        \"name\": \"Башкирский\"\n    },\n    {\n        \"id\": \"bel\",\n        \"name\": \"Белорусский\"\n    },\n    {\n        \"id\": \"bul\",\n        \"name\": \"Болгарский\"\n    },\n    {\n        \"id\": \"hun\",\n        \"name\": \"Венгерский\"\n    },\n    {\n        \"id\": \"vie\",\n        \"name\": \"Вьетнамский\"\n    },\n    {\n        \"id\": \"nld\",\n        \"name\": \"Голландский\"\n    },\n    {\n        \"id\": \"ell\",\n        \"name\": \"Греческий\"\n    },\n    {\n        \"id\": \"kat\",\n        \"name\": \"Грузинский\"\n    },\n    {\n        \"id\": \"dan\",\n        \"name\": \"Датский\"\n    },\n    {\n        \"id\": \"heb\",\n        \"name\": \"Иврит\"\n    },\n    {\n        \"id\": \"spa\",\n        \"name\": \"Испанский\"\n    },\n    {\n        \"id\": \"ita\",\n        \"name\": \"Итальянский\"\n    },\n    {\n        \"id\": \"kaz\",\n        \"name\": \"Казахский\"\n    },\n    {\n        \"id\": \"zho\",\n        \"name\": \"Китайский\"\n    },\n    {\n        \"id\": \"kom\",\n        \"name\": \"Коми\"\n    },\n    {\n        \"id\": \"kor\",\n        \"name\": \"Корейский\"\n    },\n    {\n        \"id\": \"kur\",\n        \"name\": \"Курдский\"\n    },\n    {\n        \"id\": \"lav\",\n        \"name\": \"Латышский\"\n    },\n    {\n        \"id\": \"lit\",\n        \"name\": \"Литовский\"\n    },\n    {\n        \"id\": \"mke\",\n        \"name\": \"Македонский\"\n    },\n    {\n        \"id\": \"mon\",\n        \"name\": \"Монгольский\"\n    },\n    {\n        \"id\": \"nor\",\n        \"name\": \"Норвежский\"\n    },\n    {\n        \"id\": \"fas\",\n        \"name\": \"Персидский\"\n    },\n    {\n        \"id\": \"pol\",\n        \"name\": \"Польский\"\n    },\n    {\n        \"id\": \"por\",\n        \"name\": \"Португальский\"\n    },\n    {\n        \"id\": \"ron\",\n        \"name\": \"Румынский\"\n    },\n    {\n        \"id\": \"rus\",\n        \"name\": \"Русский\"\n    },\n    {\n        \"id\": \"san\",\n        \"name\": \"Санскрит\"\n    },\n    {\n        \"id\": \"srp\",\n        \"name\": \"Сербский\"\n    },\n    {\n        \"id\": \"slk\",\n        \"name\": \"Словацкий\"\n    },\n    {\n        \"id\": \"slv\",\n        \"name\": \"Словенский\"\n    },\n    {\n        \"id\": \"swa\",\n        \"name\": \"Суахили\"\n    },\n    {\n        \"id\": \"tgk\",\n        \"name\": \"Таджикский\"\n    },\n    {\n        \"id\": \"tha\",\n        \"name\": \"Тайский\"\n    },\n    {\n        \"id\": \"tat\",\n        \"name\": \"Татарский\"\n    },\n    {\n        \"id\": \"tur\",\n        \"name\": \"Турецкий\"\n    },\n    {\n        \"id\": \"tuk\",\n        \"name\": \"Туркменский\"\n    },\n    {\n        \"id\": \"uzb\",\n        \"name\": \"Узбекский\"\n    },\n    {\n        \"id\": \"ukr\",\n        \"name\": \"Украинский\"\n    },\n    {\n        \"id\": \"urd\",\n        \"name\": \"Урду\"\n    },\n    {\n        \"id\": \"fin\",\n        \"name\": \"Финский\"\n    },\n    {\n        \"id\": \"hrv\",\n        \"name\": \"Хорватский\"\n    },\n    {\n        \"id\": \"che\",\n        \"name\": \"Чеченский\"\n    },\n    {\n        \"id\": \"ces\",\n        \"name\": \"Чешский\"\n    },\n    {\n        \"id\": \"chv\",\n        \"name\": \"Чувашский\"\n    },\n    {\n        \"id\": \"swe\",\n        \"name\": \"Шведский\"\n    },\n    {\n        \"id\": \"est\",\n        \"name\": \"Эстонский\"\n    },\n    {\n        \"id\": \"jpn\",\n        \"name\": \"Японский\"\n    },\n    {\n        \"id\": \"hin\",\n        \"name\": \"Хинди\"\n    },\n    {\n        \"id\": \"eng\",\n        \"name\": \"Английский\"\n    },\n    {\n        \"id\": \"deu\",\n        \"name\": \"Немецкий\"\n    },\n    {\n        \"id\": \"fra\",\n        \"name\": \"Французский\"\n    },\n    {\n        \"id\": \"ind\",\n        \"name\": \"Индонезийский\"\n    },\n    {\n        \"id\": \"inh\",\n        \"name\": \"Ингушский\"\n    },\n    {\n        \"id\": \"kas\",\n        \"name\": \"Кашмирский\"\n    },\n    {\n        \"id\": \"epo\",\n        \"name\": \"Эсперанто\"\n    },\n    {\n        \"id\": \"khm\",\n        \"name\": \"Кхмерский (Камбоджийский)\"\n    },\n    {\n        \"id\": \"crs\",\n        \"name\": \"Креольский (Сейшельские острова)\"\n    },\n    {\n        \"id\": \"abk\",\n        \"name\": \"Абхазский\"\n    },\n    {\n        \"id\": \"oss\",\n        \"name\": \"Осетинский\"\n    },\n    {\n        \"id\": \"kbd\",\n        \"name\": \"Кабардино-черкесский\"\n    },\n    {\n        \"id\": \"krc\",\n        \"name\": \"Карачаево-балкарский\"\n    },\n    {\n        \"id\": \"cat\",\n        \"name\": \"Каталанский\"\n    },\n    {\n        \"id\": \"uig\",\n        \"name\": \"Уйгурский\"\n    },\n    {\n        \"id\": \"abq\",\n        \"name\": \"Абазинский\"\n    },\n    {\n        \"id\": \"kum\",\n        \"name\": \"Кумыкский\"\n    },\n    {\n        \"id\": \"tam\",\n        \"name\": \"Тамильский\"\n    },\n    {\n        \"id\": \"lat\",\n        \"name\": \"Латинский\"\n    },\n    {\n        \"id\": \"zlm\",\n        \"name\": \"Малазийский\"\n    },\n    {\n        \"id\": \"nog\",\n        \"name\": \"Ногайский\"\n    },\n    {\n        \"id\": \"amh\",\n        \"name\": \"Амхарский\"\n    },\n    {\n        \"id\": \"dar\",\n        \"name\": \"Даргинский\"\n    },\n    {\n        \"id\": \"ava\",\n        \"name\": \"Аварский\"\n    },\n    {\n        \"id\": \"eus\",\n        \"name\": \"Баскский\"\n    },\n    {\n        \"id\": \"ben\",\n        \"name\": \"Бенгальский\"\n    },\n    {\n        \"id\": \"bos\",\n        \"name\": \"Боснийский\"\n    },\n    {\n        \"id\": \"bua\",\n        \"name\": \"Бурятский\"\n    },\n    {\n        \"id\": \"dag\",\n        \"name\": \"Дагестанский\"\n    },\n    {\n        \"id\": \"gle\",\n        \"name\": \"Ирландский\"\n    },\n    {\n        \"id\": \"isl\",\n        \"name\": \"Исландский\"\n    },\n    {\n        \"id\": \"krl\",\n        \"name\": \"Карельский\"\n    },\n    {\n        \"id\": \"lbe\",\n        \"name\": \"Лакский\"\n    },\n    {\n        \"id\": \"lao\",\n        \"name\": \"Лаосский\"\n    },\n    {\n        \"id\": \"lez\",\n        \"name\": \"Лезгинский\"\n    },\n    {\n        \"id\": \"chm\",\n        \"name\": \"Марийский\"\n    },\n    {\n        \"id\": \"nep\",\n        \"name\": \"Непальский\"\n    },\n    {\n        \"id\": \"pan\",\n        \"name\": \"Панджаби\"\n    },\n    {\n        \"id\": \"pus\",\n        \"name\": \"Пушту\"\n    },\n    {\n        \"id\": \"som\",\n        \"name\": \"Сомалийский\"\n    },\n    {\n        \"id\": \"tgl\",\n        \"name\": \"Тагальский\"\n    },\n    {\n        \"id\": \"tly\",\n        \"name\": \"Талышский\"\n    },\n    {\n        \"id\": \"bod\",\n        \"name\": \"Тибетский\"\n    },\n    {\n        \"id\": \"tyv\",\n        \"name\": \"Тувинский\"\n    },\n    {\n        \"id\": \"vls\",\n        \"name\": \"Фламандский\"\n    },\n    {\n        \"id\": \"mns\",\n        \"name\": \"Мансийский\"\n    },\n    {\n        \"id\": \"sah\",\n        \"name\": \"Якутский\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Университет",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/suggests/educational_institutions?text=Московский финансово-юридический университет (Московская финансово-юридическая академия), Москва",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"suggests",
+						"educational_institutions"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Московский финансово-юридический университет (Московская финансово-юридическая академия), Москва"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Университет",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.hh.ru/suggests/educational_institutions?text=Московский финансово-юридический университет (Московская финансово-юридическая академия), Москва",
+							"protocol": "https",
+							"host": [
+								"api",
+								"hh",
+								"ru"
+							],
+							"path": [
+								"suggests",
+								"educational_institutions"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "Московский финансово-юридический университет (Московская финансово-юридическая академия), Москва"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "ddos-guard"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Jun 2022 11:23:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "294"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1654687380680a4c54aec6ba9bc5aba8"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 27 Apr 2022 11:23:00 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location, ETag, Date, Expires, Cache-Control, Content-Type, X-Request-ID"
+						},
+						{
+							"key": "X-Request-ID",
+							"value": "1654687380680a4c54aec6ba9bc5aba8"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"nel\",\"endpoints\":[{\"url\":\"https:\\/\\/nel.hhdev.ru\\/report\\/api\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"nel\",\"max_age\":3600}"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"id\": \"39108\",\n            \"text\": \"Московский финансово-юридический университет (Московская финансово-юридическая академия), Москва\",\n            \"acronym\": \"МФЮА\",\n            \"synonyms\": null,\n            \"area\": {\n                \"id\": \"1\",\n                \"name\": \"Москва\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
