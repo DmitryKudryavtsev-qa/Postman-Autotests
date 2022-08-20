@@ -1,0 +1,35 @@
+
+https://api.hh.ru/suggests/skill_set?text=Тестирование пользовательского интерфейса
+
+Тест Status code 200
+
+pm.environment.get("variable_key");
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+https://api.hh.ru/employers?id=2836
+
+Тест ответа в Json 
+
+pm.test("Your test name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.value).to.eql(100);
+});
+
+https://api.hh.ru/metro/66
+
+Тест на время ответа
+
+pm.test("Response time is less than 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(200);
+});
+
+https://api.hh.ru/suggests/educational_institutions?text=Московский финансово-юридический университет (Московская финансово-юридическая академия), Москва
+
+Тест типа запроса
+
+pm.test("Successful POST request", function () {
+    pm.expect(pm.response.code).to.be.oneOf([201, 202]);
+});
